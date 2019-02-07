@@ -1,0 +1,32 @@
+#footer {
+	padding: 65px 0;
+	color: $gray;
+	font-size: 17px;
+	text-align: center;
+	@include media ('<tablet') {
+		padding: 45px 0;
+	}
+	.container {
+		max-width: 1110px;
+		padding: 0 15px;
+	}
+	.top-nav {
+		background: transparent;
+		@include media ('<tablet') {
+			display: block;
+		}
+		ul {
+			margin-left: -13px;
+			justify-content: center;
+			@include media ('<phone') {
+				flex-wrap: wrap;
+			}
+		}
+		li {
+			margin-bottom: 10px;
+			@include media ('<phone') {
+				width: 100%;
+			}
+		}
+	}
+}
